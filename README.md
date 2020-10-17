@@ -39,7 +39,7 @@ There are two sources of data for this project: articles and comments
 
 ### Collecting existing articles and comments
 
-In order to start the project, I need to confirm I'm able to collect all the articles and comments from the PFT website since the sites inception. According to ![this article](https://profootballtalk.nbcsports.com/2007/10/24/about/), Profootballtalk.com was launched in 2001 but the Rumor Mill (which contains the articles I'm interested in) only has articles going back to October 2007.
+In order to start the project, I need to confirm I'm able to collect all the articles and comments from the PFT website since the sites inception. According to [this article](https://profootballtalk.nbcsports.com/2007/10/24/about/), Profootballtalk.com was launched in 2001 but the Rumor Mill (which contains the articles I'm interested in) only has articles going back to October 2007.
 
 It appears the Rumor Mill contains ~15 articles/page and at the moment of this writing, has 13,503 pages. That means there are approximately 202,545 articles to collect. Assuming articles average of ~5 comments/article, that means there are approximately 1,012,725 comments to collect.
 
