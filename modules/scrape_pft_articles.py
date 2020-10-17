@@ -34,8 +34,8 @@ def scrape_pft_rumormill(url='https://profootballtalk.nbcsports.com/category/rum
     """
 
     # Sent GET request to URL and convert response to HTML soup
-    r = requests.get(url, timeout=2.50)
-    assert r.status_code == 200
+    r = requests.get(url)
+    assert r.status_code == 200, 'Unexpected response from request'
     scrape_time = dt.datetime.now()
     soup = BeautifulSoup(r.text, 'html.parser')
 

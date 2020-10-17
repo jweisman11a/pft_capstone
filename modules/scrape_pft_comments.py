@@ -41,6 +41,7 @@ def scrape_comments_from_pft_article(url='https://profootballtalk.nbcsports.com/
     time.sleep(1)
     soup = BeautifulSoup(driver.page_source, features="html.parser")
     scrape_time = dt.datetime.now()
+    driver.close()
 
     # Get the names of the commentors on the article
     article_commenters = soup.findAll('b', {"class":"fn"})
