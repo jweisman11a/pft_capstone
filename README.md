@@ -5,7 +5,7 @@ This project is intended to serve as my Deloitte Machine Learning  Guild (MLG) c
 | Project Role  | Name |
 | ------------- | ------------- |
 | Apprentice  | [Jeff Weisman](https://github.com/jweisman11a)  |
-| Master  | [George Paneteras](https://github.com/GPanoptis)  |
+| Master  | [George Panteras](https://github.com/GPanoptis)  |
 
 
 ### Project Idea
@@ -45,7 +45,7 @@ It appears the Rumor Mill contains ~15 articles/page and at the moment of this w
 
 To test this, I need to complete the following tasks:
 
-- [ ] Write a function to scrape a single article including the 6 elements above
-- [ ] Write a function to scrape comments from a single article including the 4 elements above
+- [x] Write a function to scrape a single article including the 6 elements above
+- [x] Write a function to scrape comments from a single article including the 4 elements above
 - [ ] Push code to the repo
 - [ ] Submit to MLG pod team members for review and feedback

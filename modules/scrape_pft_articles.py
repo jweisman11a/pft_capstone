@@ -28,7 +28,7 @@ def scrape_pft_rumormill(url='https://profootballtalk.nbcsports.com/category/rum
         Data returned is raw // not processed by this function
 
     Args:
-        url (str): The URL of the PFT article to be scraped
+        url (str): The URL of the PFT Rumor Mill page to be scraped
     Returns:
         A pandas DataFrame containing the elements outlined above
     """
