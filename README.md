@@ -47,5 +47,20 @@ To test this, I need to complete the following tasks:
 
 - [x] Write a function to scrape a single article including the 6 elements above
 - [x] Write a function to scrape comments from a single article including the 4 elements above
-- [ ] Push code to the repo
-- [ ] Submit to MLG pod team members for review and feedback
+- [x] Push code to the repo
+- [x] Submit to MLG pod team members for review and feedback
+
+Now that I have some basic functions to scrape the data, let's look at what's next. Since I expect there to be >200k articles and 5x as many comments, I need both functions to be fairly efficient. Let's see if we can thread one or both functions before we begin our full data collect.
+
+- [ ] Write code to leverage multiprocessing library to speed up article collection
+- [ ] Write code to leverage multiprocessing library to speed up comment collection (currently very slow)
+
+Once that is complete, it's time to collect our data!
+
+- [ ] Collect all articles
+- [ ] Collect all comments
+
+
+### EDA
+
+TBD
