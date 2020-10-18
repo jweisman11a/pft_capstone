@@ -17,12 +17,13 @@ def scrape_pft_rumormill(url='https://profootballtalk.nbcsports.com/category/rum
         Not all articles have comments enabled
 
         Function captures the following elements of the passed article URL:
-            URL
+            Article URL
+            Rumor Mill Page URL
             Title
             Author
             Post Date
             Text of the article
-            # of Comments (or whether comments were disabled)
+            # of Comments (or whether comments were disabled) 
         Function add a datetime stamp indicating when it was scraped
 
         Data returned is raw // not processed by this function
@@ -49,7 +50,8 @@ def scrape_pft_rumormill(url='https://profootballtalk.nbcsports.com/category/rum
                     Please confirm you passed in a URL in the expected format.
                     Example: https://profootballtalk.nbcsports.com/category/rumor-mill/page/<page_number>/
                     """
-        raise Exception(message)
+        # raise Exception(message)
+        print(message)
     article_titles = [a.text for a in articles]
     article_links = [a.find('a').get('href') for a in articles]
 
@@ -86,7 +88,7 @@ def scrape_pft_rumormill(url='https://profootballtalk.nbcsports.com/category/rum
 
     # Compile results and convert into a DataFrame
     page_data = list(zip(article_titles, article_links, article_publish_dates, article_authors,
-                         article_content, [scrape_time for _ in range(len(article_titles))],
+                         article_content, article_comment_count, [scrape_time for _ in range(len(article_titles))],
                         [url for _ in range(len(article_titles))]))
     return pd.DataFrame(page_data, columns=['article_title','article_url','article_post_date','article_author',
-                                            'article_body','scrape_datetime', 'page_url'])
+                                            'article_body','comment_count','scrape_datetime', 'page_url'])

@@ -28,13 +28,13 @@ There are two sources of data for this project: articles and comments
 - Author name
 - Posted datetime
 - Body (unstructured text)
-- /# of comments
+- \# of comments
 
 **Comments are comprised of:**
 - Username
 - Posted datetime
 - Comment
-- /# of likes and dislikes
+- \# of likes and dislikes
 
 
 ### Collecting existing articles and comments
@@ -55,12 +55,33 @@ Now that I have some basic functions to scrape the data, let's look at what's ne
 - [x] Write code to leverage multiprocessing library to speed up article collection
 - [ ] Write code to leverage multiprocessing library to speed up comment collection (currently very slow)
 
-Once that is complete, it's time to collect our data!
+Now that is complete, it's time to collect our data!
 
-- [ ] Collect all articles
+- [x] Collect all articles
 - [ ] Collect all comments
 
 
 ### EDA
 
-TBD
+EDA is a critical stage in any data science project. My main objectives for this stage are:
+
+1. Understand my data and what it contains
+2. Cleanse my data as needed
+3. Analyze the relationships between my data elements
+
+Since one can spend a near endless amount of time performing EDA, let's define some core tasks for what needs to be accomplished for each of our two datasets:
+
+**Articles EDA**
+- [x] Inspect for correct data types
+- [ ] Remove records collected incorrectly
+- [x] Clean fields
+- [ ] Check each column for uniqueness, statistical properties, outliers
+- [ ] Generate plots
+- [ ] NLP specific tasks (word freq, sentence length, avg word length, stopwords, readability)
+https://neptune.ai/blog/exploratory-data-analysis-natural-language-processing-tools
+
+**Comments EDA**
+-  [ ]
+
+
+### Clustering
