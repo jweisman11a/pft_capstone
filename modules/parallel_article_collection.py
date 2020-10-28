@@ -17,7 +17,7 @@ if __name__ == '__main__':
 
     # Check python, platform and # of cores available
     # https://sedeh.github.io/python-pandas-multiprocessing-workaround.html
-    if True:
+    if False:
         print(sys.version)
         print(platform.platform())
         print(f"CPU cores: {multiprocessing.cpu_count()}")
@@ -41,14 +41,14 @@ if __name__ == '__main__':
         start_time = time.time()
         print('Begin parallel article collection...')
 
-        last_page = 13504
+        last_page = 13534
         urls = [f'https://profootballtalk.nbcsports.com/category/rumor-mill/page/{str(i)}/' for i in range(1, last_page)]
         with multiprocessing.Pool(processes=multiprocessing.cpu_count()) as pool:
             results = list(tqdm(pool.imap(scrape_pft_rumormill, urls), total=last_page))
 
         if len(results) > 0:
             results_df = pd.concat(results)
-            results_df.to_csv(f'../data/pft_articles_collected_w_comment_counts_20201017.csv', header=True, index=False, mode='a')
+            results_df.to_csv(f'../data/raw/pft_articles_collected_w_comment_counts_20201025.csv', header=True, index=False, mode='a')
         else:
             print('No articles were found.')
 
