@@ -50,6 +50,7 @@ if __name__ == '__main__':
         urls = load_article_urls(article_data, 'article_url')
 
         start_time = time.time()
+        urls = urls[200000:]
         print(f'Begin comment collection on {len(urls)} articles...')
 
         with multiprocessing.Pool(processes=multiprocessing.cpu_count()) as pool:
@@ -57,7 +58,7 @@ if __name__ == '__main__':
 
         if len(results) > 0:
             results_df = pd.concat(results)
-            results_df.to_csv(f'../data/raw/pft_comments_collected_20201027_test.csv', header=True, index=False, mode='a')
+            results_df.to_csv(f'../data/raw/pft_comments_collected_20201028.csv', header=True, index=False, mode='a')
         else:
             print('No comments were found.')
 
