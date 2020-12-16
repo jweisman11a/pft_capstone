@@ -1,3 +1,11 @@
+## Create kernel from env
+Source: https://medium.com/@nrk25693/how-to-add-your-conda-environment-to-your-jupyter-notebook-in-just-4-steps-abeab8b8d084<br><br>
+
+*conda activate pft*<br>
+*conda install -c anaconda ipykernel*<br>
+*python -m ipykernel install --user --name=pft*
+
+
 ## Working on a new task
 
 #### Pull latest from the main branch
