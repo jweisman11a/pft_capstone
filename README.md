@@ -94,20 +94,23 @@ Now that I have a basic understanding of the data, I want to analyze the comment
 
 Numerical features
 - Total # of comments by commentor
+- Total # of unique articles commented on
 - # of unique articles commented on exactly once
 - # of unique articles commented on more than once
-- Duration of commentor activity (Last Comment Date - First Comment Days)
+- Duration of commentor activity (Last Comment Date - First Comment Days) in Days
+
+
 - # of characters in username
 - # of alpha, numeric, and spaces in username
 - Mean, median, minimum, and maxmimum comment length (characters and tokenized words)
 - Mean, median, minimum, and maxmimum time between article publication and comment
 - Max consecutive days of comments
 - Max # of comments posted in a single day
-
-Categorical Features
 - Days of week comments were made on
 - Hours of the day comments were made on
--
+- # of comments "in season" vs "out of season"
+- # of times commentor has "responded" to another commentor
+
 
 
 
