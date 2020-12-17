@@ -92,18 +92,17 @@ https://neptune.ai/blog/exploratory-data-analysis-natural-language-processing-to
 
 Now that I have a basic understanding of the data, I want to analyze the commentors to identify whether there are groups of users with similar behaviors (kind of like customer segmentation). To start, I need to engineer some features that will segmenting the commentors into clusters:
 
-Numerical features
+**Numerical features**
 - Total # of comments by commentor
 - Total # of unique articles commented on
 - \# of unique articles commented on exactly once
 - \# of unique articles commented on more than once
 - Duration of commentor activity (Last Comment Date - First Comment Days) in Days
-
-
 - \# of characters in username
 - \# of alpha, numeric, and spaces in username
-- Mean, median, minimum, and maxmimum comment length (characters and tokenized words)
-- Mean, median, minimum, and maxmimum time between article publication and comment
+- Mean, median, minimum, and maxmimum comment length (characters)
+- Mean, median, minimum, and maxmimum time between article publication and comment (hours)
+
 - Max consecutive days of comments
 - Max # of comments posted in a single day
 - Days of week comments were made on
