@@ -107,6 +107,8 @@ Now that I have a basic understanding of the data, I want to analyze the comment
 - Hours of the day comments were made on
 - \# of comments "in season" vs "out of season"
 
+
+**Additional features (if time allows)**
 - \# of times commentor has "responded" to another commentor
 - Max # of comments posted in a single day
 
