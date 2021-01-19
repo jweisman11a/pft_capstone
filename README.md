@@ -102,15 +102,16 @@ Now that I have a basic understanding of the data, I want to analyze the comment
 - \# of alpha, numeric, and spaces in username
 - Mean, median, minimum, and maxmimum comment length (characters)
 - Mean, median, minimum, and maxmimum time between article publication and comment (hours)
-- Max consecutive days of comments
 - Days of week comments were made on
 - Hours of the day comments were made on
 - \# of comments "in season" vs "out of season"
+- Max # of comments posted in a single day
 
 
 **Additional features (if time allows)**
 - \# of times commentor has "responded" to another commentor
-- Max # of comments posted in a single day
+- Max consecutive days of comments
+
 
 
 
