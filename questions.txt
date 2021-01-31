@@ -1,0 +1,6 @@
+Questions for Bryan
+1) Any academic/research papers on clustering users by engagement (user segmentation)
+2) How to determine which features are important? George suggested XGBoost
+3) Feature that categorical-like (comment by hour/DOW/author/team)
+4) Removing users that are outliers -> guidance on how to remove them
+
